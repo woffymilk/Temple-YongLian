@@ -53,7 +53,7 @@ opacity: 1
 }
 .sec01 .item {
     height: 0px;
-    padding-bottom: 42%;
+    padding-bottom: 75%;
 }
 
 .sec01 #banner1 {
@@ -109,7 +109,7 @@ opacity: 1
     position: absolute;
     height: 42px;
     width: 20px;
-    bottom: 65px;
+    bottom: 39%;
     right: 10px
 }
 
