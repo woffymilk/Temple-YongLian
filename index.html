@@ -27,30 +27,37 @@
         </div>
     </section>
     <section class="sec02">
-        <a href="index.html#section4"></a>
-        <a href="index.html#section5"></a>
-        <a href="index.html#section6"></a>
-        <a href="index.html#section7"></a>
-        <a href="index.html#section8"></a>
+        <a href="index.html#section4" class="button"></a>
+        <a href="index.html#section5" class="button"></a>
+        <a href="index.html#section6" class="button"></a>
+        <a href="index.html#section7" class="button"></a>
+        <a href="index.html#section8" class="button"></a>
 
 
     </section>
     <img src="img/section3.jpg" alt="">
-    <img src="img/section4-new.jpg" alt="" id="section4">
-<!--
-    <img src="img/section4-1.png" alt="" class="showdelay" id="section4">
-    <img src="img/section4-2.png" alt="" class="showdelay">
-    <img src="img/section4-3.png" alt="">
-    <img src="img/section4-4.png" alt="">
--->
-<!--    <img src="img/section5-1.png" alt="" id="section5">-->
+    <div class="sec04">
+        <img src="img/section4-1.png" alt="" class="showdelay">
+        <img src="img/section4-2.png" alt="" class="showdelay1">
+        <img src="img/section4-3.png" alt="" class="showdelay2">
+        <img src="img/section4-4.png" alt="" class="showdelay3">
+    </div>
+
     <img src="img/section5-new.jpg" alt="" id="section5">
     <a href="https://www.facebook.com/YongLianSmartLife/?modal=admin_todo_tour" style="display:block" target="_blank">
-        <img src="img/section5-2.png" alt=""></a>
-    <img src="img/section5-3.jpg" alt="" id="section6">
+        <img src="img/section5-2.png" alt="" class="showdelay4"></a>
+    <div style="position:relative">
+        <img src="img/section5-3.jpg" alt="" id="section6">
+        <img src="img/section5-3-1.png" alt="" id="sec5-3-1">
+        <img src="img/section5-3-2.png" alt="" id="sec5-3-2">
+        <img src="img/section5-3-3.png" alt="" id="sec5-3-3">
+        <img src="img/section5-3-4.png" alt="" id="sec5-3-4">
+        <img src="img/section5-3-5.png" alt="" id="sec5-3-5">
+        <img src="img/section5-3-6.png" alt="" id="sec5-3-6">
+    </div>
     <img src="img/section6-1.jpg" alt="" id="section7">
     <a href="https://www.facebook.com/YongLianSmartLife/?modal=admin_todo_tour" style="display:block" target="_blank">
-        <img src="img/section6-2.jpg" alt=""></a>
+        <img src="img/section6-2.jpg" alt="" class="showdelay4"></a>
     <img src="img/section7-1.jpg" alt="" id="section8">
     <a href="https://goo.gl/maps/WiUvuYRAWuH2" style="display:block" target="_blank">
         <img src="img/section7-2.jpg" alt=""></a>
@@ -102,24 +109,108 @@
             reset: false,
             mobile: true
         });
-
         sr.reveal('.showdelay', {
             viewFactor: 1,
-            duration: 600,
-            origin: 'bottom',
-            distance: '30px',
-            opacity: 0,
-            easing: 'cubic-bezier(.38,.02,.52,1.35)'
-        }, 50);
-
-        sr.reveal('.showdelay2', {
-            viewFactor: 0.8,
-            duration: 400,
+            duration: 1200,
             origin: 'bottom',
             distance: '60px',
             opacity: 0,
             easing: 'cubic-bezier(.38,.02,.52,1.35)'
-        }, 100);
+        });
+        sr.reveal('.showdelay1', {
+            viewFactor: 1,
+            duration: 1000,
+            origin: 'left',
+            distance: '60px',
+            opacity: 0,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        });
+        sr.reveal('.showdelay2', {
+            viewFactor: 1,
+            duration: 1000,
+            origin: 'right',
+            distance: '60px',
+            opacity: 0,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        });
+        sr.reveal('.showdelay3', {
+            viewFactor: 1,
+            duration: 1000,
+            origin: 'left',
+            distance: '60px',
+            opacity: 0,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        });
+        sr.reveal('.showdelay4', {
+            viewFactor: 1,
+            duration: 1000,
+            origin: 'bottom',
+            distance: '30px',
+            opacity: 0.5,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        });
+        sr.reveal('#sec5-3-1', {
+            viewFactor: 1,
+            duration: 1500,
+            delay: 300,
+            origin: 'left',
+            distance: '30px',
+            opacity: 0,
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
+        });
+         sr.reveal('#sec5-3-2', {
+            viewFactor: 1,
+            duration: 1500,
+             delay: 300,
+            origin: 'right',
+            distance: '30px',
+            opacity: 0,
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
+        });
+         sr.reveal('#sec5-3-3', {
+            viewFactor: 1,
+            duration: 1500,
+             delay: 300,
+            origin: 'left',
+            distance: '30px',
+            opacity: 0,
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
+        });
+         sr.reveal('#sec5-3-4', {
+            viewFactor: 1,
+            duration: 1500,
+             delay: 300,
+            origin: 'right',
+            distance: '30px',
+            opacity: 0,
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
+        });
+         sr.reveal('#sec5-3-5', {
+            viewFactor: 1,
+            duration: 1500,
+             delay: 300,
+            origin: 'left',
+            distance: '30px',
+            opacity: 0,
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
+        });
+         sr.reveal('#sec5-3-6', {
+            viewFactor: 1,
+            duration: 1500,
+             delay: 300,
+            origin: 'right',
+            distance: '30px',
+            opacity: 0,
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
+        });
+         sr.reveal('.showdelay5', {
+            viewFactor: 1,
+            duration: 1000,
+            origin: 'bottom',
+            distance: '30px',
+            opacity: 0.5,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        });
     </script>
 </body>
 
