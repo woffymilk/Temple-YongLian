@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="stylesheet" href="lib/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/owl-carousel/owl.carousel.css">
+    <title>湧蓮寺</title>
+</head>
+
+<body>
+    <section class="sec01">
+        <img src="img/section1.jpg" alt="">
+        <div class="owl-carousel" id="banner">
+            <div class="item" id="banner1">
+            </div>
+            <div class="item" id="banner2">
+            </div>
+            <div class="item" id="banner3">
+            </div>
+            <div class="item" id="banner4">
+            </div>
+            <div class="item" id="banner5">
+            </div>
+        </div>
+    </section>
+    <section class="sec02">
+        <a href="index.html#section4"></a>
+        <a href="index.html#section5"></a>
+        <a href="index.html#section6"></a>
+        <a href="index.html#section7"></a>
+        <a href="index.html#section8"></a>
+
+
+    </section>
+    <img src="img/section3.jpg" alt="">
+    <img src="img/section4-new.jpg" alt="" id="section4">
+<!--
+    <img src="img/section4-1.png" alt="" class="showdelay" id="section4">
+    <img src="img/section4-2.png" alt="" class="showdelay">
+    <img src="img/section4-3.png" alt="">
+    <img src="img/section4-4.png" alt="">
+-->
+<!--    <img src="img/section5-1.png" alt="" id="section5">-->
+    <img src="img/section5-new.jpg" alt="" id="section5">
+    <a href="https://www.facebook.com/YongLianSmartLife/?modal=admin_todo_tour" style="display:block" target="_blank">
+        <img src="img/section5-2.png" alt=""></a>
+    <img src="img/section5-3.jpg" alt="" id="section6">
+    <img src="img/section6-1.jpg" alt="" id="section7">
+    <a href="https://www.facebook.com/YongLianSmartLife/?modal=admin_todo_tour" style="display:block" target="_blank">
+        <img src="img/section6-2.jpg" alt=""></a>
+    <img src="img/section7-1.jpg" alt="" id="section8">
+    <a href="https://goo.gl/maps/WiUvuYRAWuH2" style="display:block" target="_blank">
+        <img src="img/section7-2.jpg" alt=""></a>
+    <img src="img/section7-3.jpg" alt="">
+    <script src="lib/jquery-3.1.0.min.js"></script>
+    <script src="lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="lib/scrollreveal.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+
+            $("#banner").owlCarousel({
+                items: 1, // 一次輪播幾個項目
+                loop: true, // 循環輪播
+                margin: 0, // 與右邊圖片的距離
+                autoplay: true, // 自動輪播
+                autoplayTimeout: 4000, // 切換時間
+                autoplayHoverPause: false, // 滑鼠經過時暫停
+                nav: true, // Show next and prev buttons
+                smartSpeed: 500,
+                singleItem: true,
+                dots: true,
+                navText: [""],
+                animateOut: 'fadeOut'
+            });
+
+
+            // smooth scrollTo
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 800);
+
+                        return false;
+                    }
+                }
+            });
+        })
+    </script>
+    <script>
+        // scrollReveal
+        // Changing the defaults
+        window.sr = ScrollReveal({
+            reset: false,
+            mobile: true
+        });
+
+        sr.reveal('.showdelay', {
+            viewFactor: 1,
+            duration: 600,
+            origin: 'bottom',
+            distance: '30px',
+            opacity: 0,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        }, 50);
+
+        sr.reveal('.showdelay2', {
+            viewFactor: 0.8,
+            duration: 400,
+            origin: 'bottom',
+            distance: '60px',
+            opacity: 0,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        }, 100);
+    </script>
+</body>
+
+</html>
