@@ -37,15 +37,17 @@
     </section>
     <img src="img/section3.jpg" alt="">
     <div class="sec04">
-        <img src="img/section4-1.png" alt="" class="showdelay"  id="section4">
+        <img src="img/section4-1.png" alt="" class="showdelay" id="section4">
         <img src="img/section4-2.png" alt="" class="showdelay1">
         <img src="img/section4-3.png" alt="" class="showdelay2">
         <img src="img/section4-4.png" alt="" class="showdelay3">
     </div>
-
-    <img src="img/section5-new.jpg" alt="" id="section5">
-    <a href="https://www.facebook.com/YongLianSmartLife/?modal=admin_todo_tour" style="display:block" target="_blank">
-        <img src="img/section5-2.png" alt="" class="showdelay4"></a>
+    <div class="sec05">
+        <img src="img/section5-1.png" alt="" id="section5">
+        <img src="img/section5-2-1.png" alt="" id="sec5-2-1">
+        <a href="https://www.facebook.com/YongLianSmartLife/?modal=admin_todo_tour" style="display:block" target="_blank">
+            <img src="img/section5-2-2.png" alt="" class="showdelay4"></a>
+    </div>
     <div style="position:relative">
         <img src="img/section5-3.jpg" alt="" id="section6">
         <img src="img/section5-3-1.png" alt="" id="sec5-3-1">
@@ -55,9 +57,10 @@
         <img src="img/section5-3-5.png" alt="" id="sec5-3-5">
         <img src="img/section5-3-6.png" alt="" id="sec5-3-6">
     </div>
-    <img src="img/section6-1.jpg" alt="" id="section7">
+    <div class="sec06">
+    <img src="img/section6-1.png" alt="" id="section7">
     <a href="https://www.facebook.com/YongLianSmartLife/?modal=admin_todo_tour" style="display:block" target="_blank">
-        <img src="img/section6-2.jpg" alt="" class="showdelay4"></a>
+        <img src="img/section6-2.jpg" alt="" class="showdelay4"></a></div>
     <img src="img/section7-1.jpg" alt="" id="section8">
     <a href="https://goo.gl/maps/WiUvuYRAWuH2" style="display:block" target="_blank">
         <img src="img/section7-2.jpg" alt=""></a>
@@ -149,6 +152,22 @@
             opacity: 0.5,
             easing: 'cubic-bezier(.38,.02,.52,1.35)'
         });
+        sr.reveal('#sec5-2-1', {
+            viewFactor: 1,
+            duration: 1000,
+            origin: 'bottom',
+            distance: '30px',
+            opacity: 0.5,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        });
+        sr.reveal('#section5', {
+            viewFactor: 1,
+            duration: 1000,
+            origin: 'top',
+            distance: '30px',
+            opacity: 0.5,
+            easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        });
         sr.reveal('#sec5-3-1', {
             viewFactor: 1,
             duration: 1500,
@@ -158,58 +177,67 @@
             opacity: 0,
             easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
         });
-         sr.reveal('#sec5-3-2', {
+        sr.reveal('#sec5-3-2', {
             viewFactor: 1,
             duration: 1500,
-             delay: 300,
+            delay: 300,
             origin: 'right',
             distance: '30px',
             opacity: 0,
             easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
         });
-         sr.reveal('#sec5-3-3', {
+        sr.reveal('#sec5-3-3', {
             viewFactor: 1,
             duration: 1500,
-             delay: 300,
+            delay: 300,
             origin: 'left',
             distance: '30px',
             opacity: 0,
             easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
         });
-         sr.reveal('#sec5-3-4', {
+        sr.reveal('#sec5-3-4', {
             viewFactor: 1,
             duration: 1500,
-             delay: 300,
+            delay: 300,
             origin: 'right',
             distance: '30px',
             opacity: 0,
             easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
         });
-         sr.reveal('#sec5-3-5', {
+        sr.reveal('#sec5-3-5', {
             viewFactor: 1,
             duration: 1500,
-             delay: 300,
+            delay: 300,
             origin: 'left',
             distance: '30px',
             opacity: 0,
             easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
         });
-         sr.reveal('#sec5-3-6', {
+        sr.reveal('#sec5-3-6', {
             viewFactor: 1,
             duration: 1500,
-             delay: 300,
+            delay: 300,
             origin: 'right',
             distance: '30px',
             opacity: 0,
             easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
         });
-         sr.reveal('.showdelay5', {
+        sr.reveal('.showdelay5', {
             viewFactor: 1,
             duration: 1000,
             origin: 'bottom',
             distance: '30px',
             opacity: 0.5,
             easing: 'cubic-bezier(.38,.02,.52,1.35)'
+        });
+        sr.reveal('#section7', {
+            viewFactor: 1,
+            duration: 1500,
+            delay: 300,
+            origin: 'left',
+            distance: '30px',
+            opacity: 0,
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
         });
     </script>
 </body>
